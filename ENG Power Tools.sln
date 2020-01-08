@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENGPowerTools.Plumbing", "ENGPowerTools.ProjectSetupApp\ENGPowerTools.Plumbing.csproj", "{3E0B0102-530D-4C7F-AC50-B18E013254F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENGPowerTools.Revit.2015", "ENGPowerTools.Revit.2015\ENGPowerTools.Revit.2015.csproj", "{298ECF2D-9CEF-48D7-96A4-72A5B514C9A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENGPowerTools.Revit.2016", "ENGPowerTools.Revit.2016\ENGPowerTools.Revit.2016.csproj", "{499BAF9D-F340-4E13-8746-1A9942004D1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENGPowerTools.Revit.2018", "ENGPowerTools.Revit.2018\ENGPowerTools.Revit.2018.csproj", "{B6F98055-164F-4A90-A772-242E80C62033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENGPowerTools.Revit.2019", "ENGPowerTools.Revit.2019\ENGPowerTools.Revit.2019.csproj", "{6D1C106B-5C07-457D-BED3-E3E5A812EFA8}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ENGPowerTools.Revit", "ENGPowerTools.Revit\ENGPowerTools.Revit.shproj", "{AC952CEE-D942-47AE-A0FA-4059CA3F335C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENGPowerTools.Revit.2017", "ENGPowerTools.Revit.2017\ENGPowerTools.Revit.2017.csproj", "{9001A62C-2632-486B-8841-333837A568B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENGPowerTools.Helpers", "ENGPowerToolsHelpers\ENGPowerTools.Helpers.csproj", "{C408DEC2-F5E1-4902-9680-E22D1B0398A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENGPowerToolsManager", "ENGPowerToolsManager\ENGPowerToolsManager.csproj", "{57493F6B-4BF8-4E6B-9784-83681980B4D8}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "VDCPowerToolsInstaller", "ENGPowerToolsInstaller\ENGPowerToolsInstaller.vdproj", "{B330F1DB-E217-49D8-84DE-E78E122743A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENGPowerToolsUpdater", "ENGPowerToolsUpdater\ENGPowerToolsUpdater.csproj", "{45887B9C-1D7F-46A6-8368-A7BAA10CAD9A}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ENGPowerTools.Revit\ENGPowerTools.Revit.projitems*{298ecf2d-9cef-48d7-96a4-72a5b514c9a1}*SharedItemsImports = 4
+		ENGPowerTools.Revit\ENGPowerTools.Revit.projitems*{499baf9d-f340-4e13-8746-1a9942004d1d}*SharedItemsImports = 4
+		ENGPowerTools.Revit\ENGPowerTools.Revit.projitems*{6d1c106b-5c07-457d-bed3-e3e5a812efa8}*SharedItemsImports = 4
+		ENGPowerTools.Revit\ENGPowerTools.Revit.projitems*{9001a62c-2632-486b-8841-333837a568b0}*SharedItemsImports = 4
+		ENGPowerTools.Revit\ENGPowerTools.Revit.projitems*{ac952cee-d942-47ae-a0fa-4059ca3f335c}*SharedItemsImports = 13
+		ENGPowerTools.Revit\ENGPowerTools.Revit.projitems*{b6f98055-164f-4a90-a772-242e80c62033}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug via Revit Addin Manager|Any CPU = Debug via Revit Addin Manager|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E0B0102-530D-4C7F-AC50-B18E013254F3}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug via Revit Addin Manager|Any CPU
+		{3E0B0102-530D-4C7F-AC50-B18E013254F3}.Debug via Revit Addin Manager|Any CPU.Build.0 = Debug via Revit Addin Manager|Any CPU
+		{3E0B0102-530D-4C7F-AC50-B18E013254F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0B0102-530D-4C7F-AC50-B18E013254F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0B0102-530D-4C7F-AC50-B18E013254F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0B0102-530D-4C7F-AC50-B18E013254F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298ECF2D-9CEF-48D7-96A4-72A5B514C9A1}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug via Revit Addin Manager|Any CPU
+		{298ECF2D-9CEF-48D7-96A4-72A5B514C9A1}.Debug via Revit Addin Manager|Any CPU.Build.0 = Debug via Revit Addin Manager|Any CPU
+		{298ECF2D-9CEF-48D7-96A4-72A5B514C9A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298ECF2D-9CEF-48D7-96A4-72A5B514C9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298ECF2D-9CEF-48D7-96A4-72A5B514C9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298ECF2D-9CEF-48D7-96A4-72A5B514C9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499BAF9D-F340-4E13-8746-1A9942004D1D}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug via Revit Addin Manager|Any CPU
+		{499BAF9D-F340-4E13-8746-1A9942004D1D}.Debug via Revit Addin Manager|Any CPU.Build.0 = Debug via Revit Addin Manager|Any CPU
+		{499BAF9D-F340-4E13-8746-1A9942004D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499BAF9D-F340-4E13-8746-1A9942004D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499BAF9D-F340-4E13-8746-1A9942004D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499BAF9D-F340-4E13-8746-1A9942004D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F98055-164F-4A90-A772-242E80C62033}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug via Revit Addin Manager|Any CPU
+		{B6F98055-164F-4A90-A772-242E80C62033}.Debug via Revit Addin Manager|Any CPU.Build.0 = Debug via Revit Addin Manager|Any CPU
+		{B6F98055-164F-4A90-A772-242E80C62033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F98055-164F-4A90-A772-242E80C62033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F98055-164F-4A90-A772-242E80C62033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F98055-164F-4A90-A772-242E80C62033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1C106B-5C07-457D-BED3-E3E5A812EFA8}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug via Revit Addin Manager|Any CPU
+		{6D1C106B-5C07-457D-BED3-E3E5A812EFA8}.Debug via Revit Addin Manager|Any CPU.Build.0 = Debug via Revit Addin Manager|Any CPU
+		{6D1C106B-5C07-457D-BED3-E3E5A812EFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1C106B-5C07-457D-BED3-E3E5A812EFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1C106B-5C07-457D-BED3-E3E5A812EFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1C106B-5C07-457D-BED3-E3E5A812EFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9001A62C-2632-486B-8841-333837A568B0}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug via Revit Addin Manager|Any CPU
+		{9001A62C-2632-486B-8841-333837A568B0}.Debug via Revit Addin Manager|Any CPU.Build.0 = Debug via Revit Addin Manager|Any CPU
+		{9001A62C-2632-486B-8841-333837A568B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9001A62C-2632-486B-8841-333837A568B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9001A62C-2632-486B-8841-333837A568B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9001A62C-2632-486B-8841-333837A568B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C408DEC2-F5E1-4902-9680-E22D1B0398A6}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug via Revit Addin Manager|Any CPU
+		{C408DEC2-F5E1-4902-9680-E22D1B0398A6}.Debug via Revit Addin Manager|Any CPU.Build.0 = Debug via Revit Addin Manager|Any CPU
+		{C408DEC2-F5E1-4902-9680-E22D1B0398A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C408DEC2-F5E1-4902-9680-E22D1B0398A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C408DEC2-F5E1-4902-9680-E22D1B0398A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C408DEC2-F5E1-4902-9680-E22D1B0398A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57493F6B-4BF8-4E6B-9784-83681980B4D8}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug|Any CPU
+		{57493F6B-4BF8-4E6B-9784-83681980B4D8}.Debug via Revit Addin Manager|Any CPU.Build.0 = Debug|Any CPU
+		{57493F6B-4BF8-4E6B-9784-83681980B4D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57493F6B-4BF8-4E6B-9784-83681980B4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57493F6B-4BF8-4E6B-9784-83681980B4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57493F6B-4BF8-4E6B-9784-83681980B4D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B330F1DB-E217-49D8-84DE-E78E122743A1}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug
+		{B330F1DB-E217-49D8-84DE-E78E122743A1}.Debug|Any CPU.ActiveCfg = Debug
+		{B330F1DB-E217-49D8-84DE-E78E122743A1}.Release|Any CPU.ActiveCfg = Release
+		{45887B9C-1D7F-46A6-8368-A7BAA10CAD9A}.Debug via Revit Addin Manager|Any CPU.ActiveCfg = Debug|Any CPU
+		{45887B9C-1D7F-46A6-8368-A7BAA10CAD9A}.Debug via Revit Addin Manager|Any CPU.Build.0 = Debug|Any CPU
+		{45887B9C-1D7F-46A6-8368-A7BAA10CAD9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45887B9C-1D7F-46A6-8368-A7BAA10CAD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45887B9C-1D7F-46A6-8368-A7BAA10CAD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45887B9C-1D7F-46A6-8368-A7BAA10CAD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D68DAF5-35BA-44BC-964F-E0A3360C44E3}
+	EndGlobalSection
+EndGlobal

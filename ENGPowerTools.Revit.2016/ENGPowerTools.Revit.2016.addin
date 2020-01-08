@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>ENG Power Tools</Name>
+        <Assembly>C:\ProgramData\Autodesk\ApplicationPlugins\ENGPowerTools.bundle\Contents\ENGPowerTools.Revit.2016.dll</Assembly>
+        <FullClassName>ENGPowerTools.Revit.EntryPoint</FullClassName>
+        <ClientId>8AF8CB1B-7969-4246-895B-6217A13703D6</ClientId>
+        <VendorId>Power Design Inc</VendorId>
+        <VendorDescription>Power Design Engineering, PowerDesignInc.us </VendorDescription>
+    </AddIn>
+</RevitAddIns>

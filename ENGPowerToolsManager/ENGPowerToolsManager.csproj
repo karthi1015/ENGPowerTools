@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57493F6B-4BF8-4E6B-9784-83681980B4D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ENGPowerToolsManager</RootNamespace>
+    <AssemblyName>ENGPowerToolsManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UpdateFiles.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PackageContents.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ENGPowerToolsManager.addin" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ENGPowerTools.ProjectSetupApp\ENGPowerTools.Plumbing.csproj">
+      <Project>{3e0b0102-530d-4c7f-ac50-b18e013254f3}</Project>
+      <Name>ENGPowerTools.Plumbing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENGPowerTools.Revit.2015\ENGPowerTools.Revit.2015.csproj">
+      <Project>{298ecf2d-9cef-48d7-96a4-72a5b514c9a1}</Project>
+      <Name>ENGPowerTools.Revit.2015</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENGPowerTools.Revit.2016\ENGPowerTools.Revit.2016.csproj">
+      <Project>{499baf9d-f340-4e13-8746-1a9942004d1d}</Project>
+      <Name>ENGPowerTools.Revit.2016</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENGPowerTools.Revit.2017\ENGPowerTools.Revit.2017.csproj">
+      <Project>{9001a62c-2632-486b-8841-333837a568b0}</Project>
+      <Name>ENGPowerTools.Revit.2017</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENGPowerTools.Revit.2018\ENGPowerTools.Revit.2018.csproj">
+      <Project>{b6f98055-164f-4a90-a772-242e80c62033}</Project>
+      <Name>ENGPowerTools.Revit.2018</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENGPowerTools.Revit.2019\ENGPowerTools.Revit.2019.csproj">
+      <Project>{6d1c106b-5c07-457d-bed3-e3e5a812efa8}</Project>
+      <Name>ENGPowerTools.Revit.2019</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENGPowerToolsHelpers\ENGPowerTools.Helpers.csproj">
+      <Project>{c408dec2-f5e1-4902-9680-e22d1b0398a6}</Project>
+      <Name>ENGPowerTools.Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENGPowerToolsUpdater\ENGPowerToolsUpdater.csproj">
+      <Project>{45887b9c-1d7f-46a6-8368-a7baa10cad9a}</Project>
+      <Name>ENGPowerToolsUpdater</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>::if $(ConfigurationName) == Release copy/Y "$(ProjectDir)bin\$(ConfigurationName)\*dll" "S:\Coordination"
+::if $(ConfigurationName) == Release copy/Y "$(ProjectDir)bin\$(ConfigurationName)\*exe" "S:\Coordination"
+::if $(ConfigurationName) == Release copy/Y "$(ProjectDir)bin\$(ConfigurationName)\*addin" "S:\Coordination"
+::if $(ConfigurationName) == Release copy/Y "$(ProjectDir)bin\$(ConfigurationName)\PackageContents.xml" "S:\Coordination"
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0"
+                    ProductType="Application"
+                    Name="Power Tools Add-ins Manager"
+                    Description=" Update the add-in files"
+                    AppVersion="1.0.0"
+                    Author=""
+                    ProductCode="{2BA4F08D-E627-4D8F-837C-29157D3ADDA8}"
+                    UpgradeCode="{ACC864D1-9FF8-4443-BC66-EC00CE10E2CF}" >
+
+    <CompanyDetails Name="Power Design Inc" Url="www.powerdesigninc.us" />
+    <RuntimeRequirements OS="Win32|Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2015" SeriesMax="R2019" />
+    <Components Description="Contents parts 2019">
+        <RuntimeRequirements OS="Win32|Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2019" SeriesMax="R2019" />
+        <ComponentEntry AppName="ENGPowerToolsManager" Version="1.0.0" ModuleName="./ENGPowerToolsManager.addin" AppDescription="ENGPowerToolsUpdater" />
+    </Components>
+    <Components Description="Contents parts 2018">
+        <RuntimeRequirements OS="Win32|Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2018" SeriesMax="R2018" />
+        <ComponentEntry AppName="ENGPowerToolsManager" Version="1.0.0" ModuleName="./ENGPowerToolsManager.addin" AppDescription="ENGPowerToolsUpdater" />
+    </Components>
+    <Components Description="Contents parts 2017">
+        <RuntimeRequirements OS="Win32|Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2017" SeriesMax="R2017" />
+        <ComponentEntry AppName="ENGPowerToolsManager" Version="1.0.0" ModuleName="./ENGPowerToolsManager.addin" AppDescription="ENGPowerToolsUpdater" />
+    </Components>
+    <Components Description="Contents parts 2016">
+        <RuntimeRequirements OS="Win32|Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2016" SeriesMax="R2016" />
+        <ComponentEntry AppName="ENGPowerToolsManager" Version="1.0.0" ModuleName="./ENGPowerToolsManager.addin" AppDescription="ENGPowerToolsUpdater" />
+    </Components>
+    <Components Description="Contents parts 2015">
+        <RuntimeRequirements OS="Win32|Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2015" SeriesMax="R2015" />
+        <ComponentEntry AppName="ENGPowerToolsManager" Version="1.0.0" ModuleName="./ENGPowerToolsManager.addin" AppDescription="ENGPowerToolsUpdater" />
+    </Components>
+</ApplicationPackage>
